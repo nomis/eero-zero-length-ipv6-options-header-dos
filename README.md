@@ -6,7 +6,7 @@ and contains a hop-by-hop or destination options extension header that refers
 to another hop-by-hop or destination options extension header that doesn't
 exist (because the packet ends before providing the content for it) then the
 Ethernet interface will stop receiving any further packets. Transmission over
-Ethernet and WiFi is unaffected.
+Ethernet, and all WiFi communication is unaffected.
 
 All testing has been performed with a network of multiple eeros in "bridge"
 mode. If a broadcast packet is used then all devices are affected at the same
