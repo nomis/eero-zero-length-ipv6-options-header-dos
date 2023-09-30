@@ -27,7 +27,7 @@ int main(int argc, char *argv[]) {
 	}
 
 	struct ifreq if_mac{};
-	std::snprintf(if_mac.ifr_name, sizeof(if_idx.ifr_name), "%s", ifname);
+	std::snprintf(if_mac.ifr_name, sizeof(if_mac.ifr_name), "%s", ifname);
 	if (ioctl(s, SIOCGIFHWADDR, &if_mac) < 0) {
 		std::perror("ioctl(SIOCGIFHWADDR)");
 		return 1;
