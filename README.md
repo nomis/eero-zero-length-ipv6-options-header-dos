@@ -9,20 +9,25 @@ Ethernet interface will stop receiving any further packets. Transmission over
 Ethernet and WiFi is unaffected.
 
 All testing has been performed with a network of multiple eeros in "bridge"
-mode. If all eero devices are affected at the same time there will be a
-complete loss of inbound Ethernet communication for about 8 minutes until they
-automatically recover.
+mode. If a broadcast packet is used then all devices are affected at the same
+time and there will be a complete loss of inbound Ethernet communication for
+about 8 minutes until they automatically recover.
 
 If a single eero is targeted then it will fallback to communicating with other
 eeros over WiFi and start bridging all the traffic it receives out the Ethernet
 interface (which is now transmit-only) with the corresponding problems that
-occur with a bridged network loop.
+occur with a bridged network loop. As long as it can still communicate with
+other eeros it doesn't appear to automatically recover from this.
+
+In both cases the effect is not permanent and the device can be rebooted to
+recover immediately.
 
 The packet can be unicast or multicast and does not need to be directed at the
-eero itself. In theory, if a unicast packet with these characteristics could
-be routed over the Internet to an IPv6 host on the WiFi network then it could
-be used to target eero devices remotely. In practise it does not appear to be
-possible to get such a packet through a bridge/router.
+eero's MAC or IPv6 address. In theory, if a unicast packet with these
+characteristics could be routed over the Internet to an IPv6 host on the WiFi
+network then it could be used to target eero devices remotely. In practise it
+does not appear to be possible to get such a packet through a bridge/router
+because it is malformed.
 
 CVSS: 6.5 ([AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:H/RL:U/RC:C](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:H/RL:U/RC:C&version=3.1))
 
