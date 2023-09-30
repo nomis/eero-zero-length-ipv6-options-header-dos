@@ -24,6 +24,8 @@ be routed over the Internet to an IPv6 host on the WiFi network then it could
 be used to target eero devices remotely. In practise it does not appear to be
 possible to get such a packet through a bridge/router.
 
+CVSS: 6.5 ([AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:H/RL:U/RC:C](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:H/RL:U/RC:C&version=3.1))
+
 Versions affected:
 * eeroOS v6.9.0 and later
 
