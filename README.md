@@ -36,7 +36,7 @@ Versions affected:
 
 Timeline
 --------
-* 2022-08-05: Reported issue with eeroOS v6.9.0/eeroOS v6.10.3 on eero Pro 5 to eero
+* 2022-08-05: Reported issue with eeroOS v6.9.0 and v6.10.3 on eero Pro 5 to [eero](https://eero.com/)
 * 2022-08-06: Issue acknowledged
 * 2022-10-09: Requested a timeline for when this will be fixed (no response)
 * 2022-12-12: Received claim that it has been fixed in eeroOS v6.13
