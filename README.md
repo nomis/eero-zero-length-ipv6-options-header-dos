@@ -1,5 +1,5 @@
-eeroOS Ethernet Interface Denial of Service Vulnerability
-=========================================================
+eeroOS Ethernet Interface Denial of Service Vulnerability (CVE-2023-5324)
+=========================================================================
 
 If eero Pro 5 devices receive an IPv6 packet where the payload length is zero
 and contains a hop-by-hop or destination options extension header that refers
